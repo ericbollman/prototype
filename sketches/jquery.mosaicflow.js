@@ -42,7 +42,7 @@
 	$.fn.mosaicflow.defaults = {
 		itemSelector: '> *',
 		columnClass: 'mosaicflow__column',
-		minItemWidth: 240,
+		minItemWidth: 400,
 		itemHeightCalculation: 'auto'
 	};
 
