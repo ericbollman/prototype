@@ -6,6 +6,8 @@
 	<style>
 
 	body{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 12px;
 		color: #484141;
      	text-align: center;
      	background-image: url(bg.jpg);
@@ -13,16 +15,27 @@
 		background-repeat: no-repeat;
  		background-size: cover;
 	}
+
+	a{
+		color: #8e8787;
+		text-decoration: none;
+	}
+	a:visited{
+		color: #8e8787;
+	}
+	a:hover{
+		color: #fff;
+	}
 	.container{
      	text-align: left;
      	margin: 0 auto;
-		width: 940px;
+     	width: 940px;
 		height: 100%;
 		padding: 50px;
 		background-color: #fff;
 		opacity:0.9;
-		overflow: auto;
-}
+	overflow: auto;
+	}
 
 
 	h1,h2,h3,h4{
@@ -32,28 +45,28 @@
 		margin: 0;
 	}
 	h1{
-	font-size: 80px;
-	letter-spacing: -4px;
+		font-size: 80px;
+		letter-spacing: -4px;
 	}
 
 	h2{
-	font-size: 40px;
-	letter-spacing: -2px;
+		font-size: 40px;
+		letter-spacing: -2px;
 	}
 
 	.title {
-		padding-bottom: 40px;
+		padding-bottom: 20px;
 	}
 	.position {
 		border-bottom: 2px solid #e0e0e0; 
-		padding-top: 20px;
+		padding: 10px 0;
 	}
 
 	h3{
-	font-size: 20px;
-	font-weight: 800;
-	letter-spacing: -1px;
-	margin: 0;
+		font-size: 20px;
+		font-weight: 800;
+		letter-spacing: -1px;
+		margin: 0;
 	}
 	#bio{
 		width: 45%;
@@ -64,7 +77,7 @@
 		height: 100px;
 		width: 100px;
 		border-radius: 50px;
-		margin-bottom: 130px;
+		margin-bottom: 20px;
 		margin-right: 25px;
 		float: left;
 	}
@@ -77,6 +90,13 @@
 		padding: 20px;
 	}
 
+	ul{
+		text-decoration: none;
+		float: left;
+		padding: 10px;
+		margin: 10px;
+	}
+
 	#social li{
 		text-decoration: none;
 		float: left;
@@ -85,11 +105,17 @@
 		margin: 10px;
 		text-align: center;
 		list-style-type: none;
-
+		min-width: 50px;
+		-webkit-transition: All 0.5s ease;
+  		-moz-transition: All 0.5s ease;
+		 -o-transition: All 0.5s ease;
+		 -ms-transition: All 0.5s ease;
+		 transition: All 0.5s ease;
 	}
 
-	ul li{
-
+	#social li:hover{
+		background-color: #484141;
+		color: #fff;
 	}
 
 	#date{
@@ -98,26 +124,26 @@
 		font-weight: 200;
 	}
 	#strengths{
-	margin-top: 30px;
-	width: 45%;
-	padding: 20px;
-	background-color: #e0e0e0;
-	float: left;
+		margin: 30px 0 0 0;
+		width: 45%;
+		padding: 20px;
+		background-color: #e0e0e0;
+		float: left;
 	}
 	#software{
-	margin-top: 30px;
-	padding: 20px;
-	width: 45%;
-	background-color: #e0e0e0;
-	float: right;
+		margin: 30px 0 0 0;
+		padding: 20px;
+		width: 45%;
+		background-color: #e0e0e0;
+		float: right;
 	}
 
 	p{
-	font-family: 'Open Sans', sans-serif;
-	color: #8e8787;
-	font-weight: 300;
-	line-height: 25px;	
-	font-size: 16px;
+		font-family: 'Open Sans', sans-serif;
+		color: #8e8787;
+		font-weight: 300;
+		line-height: 25px;	
+		font-size: 16px;
 	}
 
 
@@ -135,14 +161,14 @@
 
 		<div id="social">
 			<ol>
-				<li> Instagram</li>
-				<li> Twitter</li>
-				<li> Linkedin</li>
-				<li> Github</li>
+				<li> <a href="http://instagram.com/bollman"> Instagram</a> </li>
+				<li> <a href="https://twitter.com/bollman">Twitter</a></li>
+				<li> <a href="http://www.linkedin.com/in/ericbollman">Linkedin</a></li>
+				<li> <a href="https://www.facebook.com/eric.bollman.3">Facebook</a></li>
+				<li> <a href="https://github.com/ericbollman">Github</a></li>
+				<li> <a href="mailto:bollman@gmail.com">Email</a></li>
 			</ol>
 		</div>
-
-		<div style="clear: both;"></div>
 
 		<div class="title">
 			<h2>Experience</h2>
@@ -199,9 +225,6 @@
 			
 	</div>
 
-
-
-	</div>
 
 </body>
 </html>
