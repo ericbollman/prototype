@@ -2,8 +2,8 @@
 <html>
 <title>Eric Bollman CV</title>
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-	<style>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<style>
 
 	body{
 		font-family: 'Open Sans', sans-serif;
@@ -34,7 +34,7 @@
 		padding: 50px;
 		background-color: #fff;
 		opacity:0.9;
-	overflow: auto;
+		overflow: auto;
 	}
 
 
@@ -77,7 +77,7 @@
 		height: 100px;
 		width: 100px;
 		border-radius: 50px;
-		margin-bottom: 20px;
+		margin-bottom:100px;
 		margin-right: 25px;
 		float: left;
 	}
@@ -85,9 +85,10 @@
 		width: 45%;
 		height: 200px;
 		float: right;
-		background-color: #e0e0e0;
-		pacity:0.5;
+		background-color: #ccc;
+		opacity:0.65;
 		padding: 20px;
+		-webkit-box-shadow: inset 0 0 9px rgba(153,153,153,.75); 
 	}
 
 	ul{
@@ -101,16 +102,54 @@
 		text-decoration: none;
 		float: left;
 		background-color: #fff;
-		padding: 20px;
-		margin: 10px;
+		padding-top: 40px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: 5px;
 		text-align: center;
 		list-style-type: none;
 		min-width: 50px;
+		min-height: 30px;
 		-webkit-transition: All 0.5s ease;
   		-moz-transition: All 0.5s ease;
-		 -o-transition: All 0.5s ease;
-		 -ms-transition: All 0.5s ease;
-		 transition: All 0.5s ease;
+		-o-transition: All 0.5s ease;
+		-ms-transition: All 0.5s ease;
+		transition: All 0.5s ease;
+	}
+
+	#git_icn{
+		background: url('sprite.png') no-repeat -314px -2px;
+		width: 30px;
+		height: 26px;
+	}
+	#inst_icn{
+		background: url('sprite.png') no-repeat -401px -2px;
+		width: 25px;
+		height: 26px;
+
+	}
+	#tweet_icn{
+		background: url('sprite.png') no-repeat -129px -2px;
+		width: 27px;
+		height: 22px;
+	}
+
+	#li_icn{
+		background: url('sprite.png') no-repeat -44px -2px;
+		width: 25px;
+		height: 25px;
+	}
+
+	#fb_icn{
+		background: url('sprite.png') no-repeat -488px -2px;
+		width: 15px;
+		height: 26px;
+	}
+
+	#email_icn{
+		background: url('sprite.png') no-repeat -221px -2px;
+		width: 30px;
+		height: 19px;
 	}
 
 	#social li:hover{
@@ -126,15 +165,20 @@
 	#strengths{
 		margin: 30px 0 0 0;
 		width: 45%;
+		min-height: 373px;
 		padding: 20px;
 		background-color: #e0e0e0;
+		-webkit-box-shadow: inset 0 0 9px rgba(153,153,153,.75); 
+
 		float: left;
 	}
 	#software{
 		margin: 30px 0 0 0;
 		padding: 20px;
 		width: 45%;
+		min-height: 373px;
 		background-color: #e0e0e0;
+		-webkit-box-shadow: inset 0 0 9px rgba(153,153,153,.75); 
 		float: right;
 	}
 
@@ -143,53 +187,42 @@
 		color: #8e8787;
 		font-weight: 300;
 		line-height: 25px;	
-		font-size: 16px;
+		font-size: 13px;
 	}
-
-
-
-	</style>
+</style>
 
 </head>
 <body>
 	<div class="container">
-
 		<div id="bio">
 			<div id="bio_pic"></div><H2>Eric Bollman</H2>
 			<p>I'm a product designer with over 10+ years experience designing and managing web and mobile experiences. I'm currently working at Perkville, a company I co-founded with Sunil Saha. Perkville offers a self-serve reward solution for local businesses.</p>
 		</div>
-
 		<div id="social">
 			<ol>
-				<li> <a href="http://instagram.com/bollman"> Instagram</a> </li>
-				<li> <a href="https://twitter.com/bollman">Twitter</a></li>
-				<li> <a href="http://www.linkedin.com/in/ericbollman">Linkedin</a></li>
-				<li> <a href="https://www.facebook.com/eric.bollman.3">Facebook</a></li>
-				<li> <a href="https://github.com/ericbollman">Github</a></li>
-				<li> <a href="mailto:bollman@gmail.com">Email</a></li>
+				<li id="inst_icn"> <a href="http://instagram.com/bollman">Instagram</a> </li>
+				<li id="tweet_icn"> <a href="https://twitter.com/bollman">Twitter</a></li>
+				<li id="li_icn"> <a href="http://www.linkedin.com/in/ericbollman">Linkedin</a></li>
+				<li id="fb_icn"> <a href="https://www.facebook.com/eric.bollman.3">Facebook</a></li>
+				<li id="git_icn"> <a href="https://github.com/ericbollman">Github</a></li>
+				<li id="email_icn"> <a href="mailto:bollman@gmail.com">Email</a></li>
 			</ol>
 		</div>
-
 		<div class="title">
 			<h2>Experience</h2>
 		</div>
-
 		<div class="position">
 			<h3>Co-Founder - Perkville <span id="date"> ( 2010 - 2013 )</span></h3><p>Perkville is a revolutionary service that empowers any local business to create a loyalty program in minutes.</p>
 		</div>
-
 		<div class="position">
 			<h3>UX Design Consultant<span id="date"> ( 2010 - Present )</span></h3><p>Perkville is a revolutionary service that empowers any local business to create a loyalty program in minutes.</p>
 		</div>
-
 		<div class="position">
-			<h3>Director of UX - Yahoo <span id="date">( 2005 - 20010 )</span></h3><p>Perkville is a revolutionary service that empowers any local business to create a loyalty program in minutes.</p>
+			<h3>Director of UX - Yahoo <span id="date">( 2005 - 20010 )</span></h3><p>Responsible for leading framework UI patterns for APT, Yahoo's next generation display advertising platform. Team tested over 200 interaction patterns. Documentation distributed to a team of over 600 engineers</p>
 		</div>
-
 		<div class="position">
-			<h3>UX Designer - Monster.com <span id="date">( 2002 - 2005 )</span></h3><p>Perkville is a revolutionary service that empowers any local business to create a loyalty program in minutes.</p>
+			<h3>UX Designer - Monster.com <span id="date">( 2002 - 2005 )</span></h3><p>Designed consumer experiences for the following clients - U.S Army, Defense Intelligence Agency, The New School, Medco, Reebok, Deloitte, Campbell's, SAP</p>
 		</div>
-
 		<div id="strengths"><h2>Strengths</h2>
 			<ul>
 			<li>Responsive Design</li>
@@ -204,7 +237,6 @@
 			<li>Client Presentations</li>
 			</ul>
 		</div>
-
 		<div id="software"><h2>Software</h2>
 			<ul>
 			<li>Adobe After Effects</li>
@@ -221,10 +253,7 @@
 			<li>CSS</li>
 			<li>HTML</li>
 			<li>CSS Frameworks</li>
-			</ul>
-			
+			</ul>	
 	</div>
-
-
 </body>
 </html>
