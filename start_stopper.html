@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+window.onload = function(){
+	var starter = document.getElementById("starter");
+	var input = document.getElementById("timer");
+
+	starter.addEventListener("click", function(event){
+	event.preventDefault()
+
+	var countdown = window.setInterval(function(){
+	var count = parseInt(input.value);
+	count = count - 1;
+
+	if (count==0){
+		input.value=count;
+		alert("time's up");
+		clearInterval(countdown);
+	}else{
+		input.value=count;
+	}
+
+	}, 1000);
+	
+	});
+}
+
+
+// window.onload = function(){
+// 	button = document.getElementById('go');
+
+// 	button.addEventListener("click", function(){
+	
+// 		window.setTimeout(function(){
+// 			firstTimeout();
+// 		}, 2000);
+// 	});
+// }
+
+
+</script>
+</head>
+<body>
+	<form id="countdown-form">
+		<input id="timer" placeholder=" enter a whole value" />
+		<button id="starter">Start</button>
+		<button id="stopper">Stop</button>
+
+	</form>
+</body>
+</html>
